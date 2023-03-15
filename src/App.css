@@ -15,24 +15,63 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 2%;
 }
 
 .App-link {
   color: #61dafb;
 }
+/* 
+div {
+  border: #282c34 1px dotted;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.MainContainer {
+  width: 75%;
+  display: inline;
+  padding: 2%;
+  margin: .5%;
 }
+
+div.Inputs {
+  display: inline-block;
+  padding: 1%;
+}
+
+input.LoginInfo {
+  width: 20vw;
+  padding: 1%;
+  margin: .5%;
+  border-radius: 5px;
+  border: 2px #a1a1a1 solid;
+}
+
+button {
+  width: 20vw;
+  font-size: 1.25vw;
+  margin: 1% 1% .5% 1%;
+  padding: 1%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.Login {
+  background-color: #64a052;
+  color: white;
+  /* border: 2px white solid; */
+}
+
+button.Register{
+  background-color: white;
+  color: #a1a1a1;
+  border: 2px #a1a1a1 solid;
+}
+
