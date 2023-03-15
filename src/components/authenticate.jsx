@@ -28,7 +28,7 @@ function Authentificate() {
   const register = () => {
     createUserWithEmailAndPassword(auth, email, password).then(() => {
       alert('Account successfully created.');
-    }).catch((error) => alert(error.message));
+    }).catch((error) => alert('Creating an account was not successful.'));
   }
 
   // Change email & password

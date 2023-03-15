@@ -1,8 +1,8 @@
 {
   "name": "cs378-p4",
   "version": "0.1.0",
-  "homepage": "https://github.com/jess8liu/cs378-p4.git",
-  "private": true,
+  "homepage": "https://jess8liu.github.io/cs378-p4/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

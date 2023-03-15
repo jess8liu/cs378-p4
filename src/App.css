@@ -28,10 +28,6 @@
 .App-link {
   color: #61dafb;
 }
-/* 
-div {
-  border: #282c34 1px dotted;
-} */
 
 div.MainContainer {
   width: 75%;
@@ -53,6 +49,14 @@ input.LoginInfo {
   border: 2px #a1a1a1 solid;
 }
 
+input.FlowerInfo {
+  width: 20vw;
+  padding: 1%;
+  margin: .5%;
+  border-radius: 5px;
+  border: 2px #a1a1a1 solid;
+}
+
 button {
   width: 20vw;
   font-size: 1.25vw;
@@ -64,7 +68,7 @@ button {
 }
 
 button.Login {
-  background-color: #64a052;
+  background-color: #447aee;
   color: white;
   /* border: 2px white solid; */
 }

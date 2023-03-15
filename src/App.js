@@ -1,6 +1,6 @@
 import './App.css';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import Authenticate from './components/authenticate';
 
 function App() {
