@@ -44,31 +44,36 @@ function Authentificate() {
     <div className='MainContainer'>
       {!isLoggedIn ? (
         <>
-          <div className='Input'>
-            <div>
-              <input className='LoginInfo' type="email" placeholder="Email" value={email} onChange={changeEmail}>
-              </input>
+          <h1>
+            Hello! Please sign in.
+          </h1>
+          <div className='LogInContainer'>
+            <div className='Input'>
+              <div>
+                <input className='LoginInfo' type="email" placeholder="Email" value={email} onChange={changeEmail}>
+                </input>
+              </div>
+              <div>
+                <input className='LoginInfo' type="password" placeholder="Password" value={password} onChange={changePassword}>
+                </input>
+              </div>
             </div>
-            <div>
-              <input className='LoginInfo' type="password" placeholder="Password" value={password} onChange={changePassword}>
-              </input>
+
+            <div className='Buttons'>
+              <div>
+                <button className='Login' onClick={login}>
+                  Login
+                </button>
+              </div>
+
+              <div>
+                <button className='Register' onClick={register}>
+                  Sign Up
+                </button>
+              </div>
             </div>
           </div>
 
-
-          <div className='Buttons'>
-            <div>
-              <button className='Login' onClick={login}>
-                Login
-              </button>
-            </div>
-
-            <div>
-              <button className='Register' onClick={register}>
-                Sign Up
-              </button>
-            </div>
-          </div>
         </>
       ) : (
         <></>
@@ -80,8 +85,8 @@ function Authentificate() {
             Welcome, {auth.currentUser.email}!
           </div>
 
-          <button onClick={logout}>
-            Log Out
+          <button className='Logout' onClick={logout}>
+            Logout
           </button>
 
           <div>

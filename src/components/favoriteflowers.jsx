@@ -69,8 +69,8 @@ function FavoriteFlowers() {
 					</div>
 				</div>
 
-				<button onClick={save}>
-					Save
+				<button className='Save' onClick={save}>
+					Add New Flower
 				</button>
 			</div>
 		</div>

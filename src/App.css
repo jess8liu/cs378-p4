@@ -14,13 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #447aee;
   min-width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 5vw;
+  font-weight: bold;
   color: white;
   padding: 2%;
 }
@@ -36,9 +37,17 @@ div.MainContainer {
   margin: .5%;
 }
 
+div.LogInContainer {
+  margin: auto;
+  width: 70%;
+  height: 90%;
+  padding: 2%;
+}
+
 div.Inputs {
   display: inline-block;
   padding: 1%;
+  margin: 2%;
 }
 
 div.FlowerList {
@@ -70,8 +79,12 @@ button {
   margin: 1% 1% .5% 1%;
   padding: 1%;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
 }
 
 button.Login {
@@ -80,9 +93,19 @@ button.Login {
   /* border: 2px white solid; */
 }
 
-button.Register{
+button.Register {
   background-color: white;
   color: #a1a1a1;
   border: 2px #a1a1a1 solid;
 }
 
+button.Logout {
+  background-color: white;
+  color: #a1a1a1;
+  border: 2px #a1a1a1 solid;
+}
+
+button.Save {
+  background-color: #447aee;
+  color: white;
+}
