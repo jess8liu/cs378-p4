@@ -41,6 +41,13 @@ div.Inputs {
   padding: 1%;
 }
 
+div.FlowerList {
+  background-color: #c9c9c9;
+  margin: auto;
+  width: 30%;
+  padding: 1%;
+}
+
 input.LoginInfo {
   width: 20vw;
   padding: 1%;
@@ -49,10 +56,10 @@ input.LoginInfo {
   border: 2px #a1a1a1 solid;
 }
 
-input.FlowerInfo {
+input.FlowerName {
   width: 20vw;
   padding: 1%;
-  margin: .5%;
+  margin: 1%;
   border-radius: 5px;
   border: 2px #a1a1a1 solid;
 }
