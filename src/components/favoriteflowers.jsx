@@ -22,6 +22,7 @@ function FavoriteFlowers() {
 			// The write failed...
 			alert(error);
 		});
+
 		// Clear flower text and add it to flowerList
 		setFlowerList((oldArray) => [...oldArray, flower]);
 		setFlower('');
@@ -32,9 +33,11 @@ function FavoriteFlowers() {
 		auth.onAuthStateChanged(user => {
 			if (user) {
 				onValue(ref(db, `/${auth.currentUser.uid}`), snapshot => {
-					setFlowerList([]);
+					// Retrieve the data
 					const data = snapshot.val();
+
 					// Add a new flower
+					setFlowerList([]);
 					if (data != null) {
 						Object.values(data).forEach(flower => {
 							setFlowerList((oldArray) => [...oldArray, flower]);
